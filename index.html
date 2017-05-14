@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<title>分类导航栏</title>
+<meta name="viewport" content="width=device-width,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="format-detection" content="telephone=no">
+<!--监测字符串是否为手机号-->
+<meta http-equiv="x-rim-auto-match" content="none"/>
+<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+<meta name="HandheldFriendly" content="true"/>
+
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/index.js"></script>
+</head>
+<body>
+<!--top1-->
+<div class="screening" id="screening1"> 
+	<ul>
+		<li class="Regional" id="Regional1">地域1</li>
+	</ul>	
+</div>
+<!--End top1-->
+<!--sort1-->
+<div class="grade-eject" id="grade-eject-1">
+	<ul class="grade-w" id="gradew">
+		<li onclick="grade1(1)">广州</li>
+		<li onclick="grade1(2)">深圳</li>
+		<li onclick="grade1(3)">珠海</li>
+		<li onclick="grade1(4)">汕头</li>
+		<li onclick="grade1(5)">佛山</li>
+		<li onclick="grade1(6)">湛江</li>
+		<li onclick="grade1(7)">清远</li>
+		<li onclick="grade1(8)">东莞</li>
+		<li onclick="grade1(9)">中山</li>
+		<li onclick="grade1(10)">潮州</li>
+	</ul>
+	<div class="grade-w-1">
+		<ul>
+			<li onclick="grade2(1,1)">全广州</li>
+			<li onclick="grade2(1,2)">火车站</li>
+		</ul>
+		<div class="grade-w-11">
+			<ul>
+				<li>总节点</li>
+				<li>子节点1</li>
+				<li>子节点2</li>
+			</ul>
+		</div>
+		<div class="grade-w-12">
+			<ul>
+				<li>总节点</li>
+				<li>子节点1</li>
+				<li>子节点2</li>
+			</ul>
+		</div>
+	</div>
+	<div class="grade-w-2">
+		<ul>
+			<li onclick="grade2(2,1)">全深圳</li>
+			<li onclick="grade2(2,2)">火车站</li>
+		</ul>
+		<div class="grade-w-21">
+			<ul>
+				<li>总节点</li>
+				<li>子节点1</li>
+				<li>子节点2</li>
+			</ul>
+		</div>
+		<div class="grade-w-22">
+			<ul>
+				<li>总节点</li>
+				<li>子节点1</li>
+				<li>子节点2</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--End sort1-->
+<!--top1-->
+<div class="screening" id="screening2"> 
+	<ul>
+		<li class="Regional" id="Regional2">地域2</li>
+	</ul>	
+</div>
+<!--End top1-->
+<!--sort2-->
+<div class="grade-eject" id="grade-eject-2">
+	<ul class="grade-w" id="gradew">
+		<li onclick="grade1(1)">广州</li>
+		<li onclick="grade1(2)">深圳</li>
+		<li onclick="grade1(3)">珠海</li>
+		<li onclick="grade1(4)">汕头</li>
+		<li onclick="grade1(5)">佛山</li>
+		<li onclick="grade1(6)">湛江</li>
+		<li onclick="grade1(7)">清远</li>
+		<li onclick="grade1(8)">东莞</li>
+		<li onclick="grade1(9)">中山</li>
+		<li onclick="grade1(10)">潮州</li>
+	</ul>
+	<div class="grade-w-1">
+		<ul>
+			<li onclick="grade2(1,1)">全广州</li>
+			<li onclick="grade2(1,2)">火车站</li>
+		</ul>
+		<div class="grade-w-11">
+			<ul>
+				<li>总节点</li>
+				<li>子节点1</li>
+				<li>子节点2</li>
+			</ul>
+		</div>
+		<div class="grade-w-12">
+			<ul>
+				<li>总节点</li>
+				<li>子节点1</li>
+				<li>子节点2</li>
+			</ul>
+		</div>
+	</div>
+	<div class="grade-w-2">
+		<ul>
+			<li onclick="grade2(2,1)">全深圳</li>
+			<li onclick="grade2(2,2)">火车站</li>
+		</ul>
+		<div class="grade-w-21">
+			<ul>
+				<li>总节点</li>
+				<li>子节点1</li>
+				<li>子节点2</li>
+			</ul>
+		</div>
+		<div class="grade-w-22">
+			<ul>
+				<li>总节点</li>
+				<li>子节点1</li>
+				<li>子节点2</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--End sort2-->
+<div class="content">试一试</div>
+</body>
+</html>

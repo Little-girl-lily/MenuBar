@@ -1,0 +1,160 @@
+/*-------------------*/
+/*                   */
+/*      By Lily      */
+/*                   */
+/*-------------------*/
+
+body{
+	margin: 0;
+	padding: 0;
+	color: #333;
+	font-size: 62.5%；
+	background：#ededed;
+	font-family: Microsoft YaHei; 
+	background: #ccc;
+}
+/* screening */
+div.screening{
+	width: 100%;
+	overflow: hidden;
+	background: #fff;
+	position: fixed;
+	z-index: 4;
+}
+#screening2{
+	top:9%;
+}
+div.screening>ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	border-bottom: solid 1px #d3d3d3;
+	overflow: hidden;
+}
+div.screening>ul>li{
+	float: left;
+	width: 100%;
+	text-align:center;
+	line-height: 3rem;
+	border-left: solid 1px #d3d3d3;
+	/*background: url("../images/on_1.png") no-repeat 85% center;*/
+}
+/* grade */
+.grade-eject{
+	position: fixed;
+	top: -65%;
+	width: 100%;
+	height: 65%;
+	z-index: 1;
+	-webkit-transition-duration:0.4s;
+}
+.grade-eject>ul{
+	margin:0;
+	padding: 0;
+	overflow: auto;
+	height: 100%;
+	width: 100%;
+	-webkit-transition-duration:0.4s;
+}
+.grade-eject>ul>li{
+	line-height: 3rem;
+	font-size: 0.12rem;
+	padding-left: 1rem;
+	border-bottom: solid 1px #eee;
+}
+.grade-eject>ul.grade-w{
+	background: #ddd;
+	position:absolute;
+	z-index: 1;
+}
+.grade-w-1,.grade-w-2{
+	background: #eee;
+	position:absolute;
+	z-index: 2;
+	left: 100%;
+	height: 100%;
+	width: 100%;
+	-webkit-transition-duration:0.4s;
+}
+.grade-w-1>ul,.grade-w-2>ul{
+	margin:0;
+	padding: 0;
+	overflow: auto;
+	height: 100%;
+	width: 100%;
+	-webkit-transition-duration:0.4s;
+}
+.grade-w-1>ul>li,.grade-w-2>ul>li{
+	line-height: 3rem;
+	font-size: 0.12rem;
+	padding-left: 1rem;
+	border-bottom: solid 1px #eee;
+	
+}
+.grade-w-11>ul>li,.grade-w-12>ul>li,.grade-w-21>ul>li,.grade-w-22>ul>li{
+	line-height: 3rem;
+	font-size: 0.12rem;
+	padding-left: 1rem;
+	border-bottom: solid 1px #eee;
+	list-style-type: none;
+
+}
+
+.grade-w-11,.grade-w-12,.grade-w-21,.grade-w-22{
+	top:0rem;
+	background: #fff;
+	position: absolute;
+	z-index: 3;
+	left: 100%;
+	height: 100%;
+	width:100%;
+	-webkit-transition-duration:0.4s;
+}	
+
+/*
+.grade-eject>ul.grade-t{
+	background: #eee;
+	position:absolute;
+	z-index: 2;
+	left: 100%;/*可以实现隐藏*/
+/*}
+.grade-eject>ul.grade-s{
+	background: #fff;
+	position: absolute;
+	z-index: 3;
+	left: 100%;
+	list-style-type: none;
+}
+.grade-eject>ul.grade-s>li{
+	border-bottom: solid 1px #eee;
+	margin-left: 1rem;
+	padding:0;
+}*/
+.grade-w-roll{
+	top:3rem;
+}
+.grade-w-roll::after{
+	position: fixed;
+	content: "";
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: rgba(0,0,0,0,2);
+	top:0;
+}
+.grade-w-roll-2{
+	top:6rem;
+}
+.grade-w-roll-2::after{
+	position: fixed;
+	content: "";
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: rgba(0,0,0,0,2);
+	top:0;
+}
+/* content */
+.content{
+	padding-top: 3rem;
+}
