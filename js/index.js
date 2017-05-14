@@ -8,33 +8,35 @@ $(document).ready(function(){
 		if($('#grade-eject-1').hasClass('grade-w-roll')){
 			$('#grade-eject-1').removeClass('grade-w-roll');
 			$("#screening2").css("top","9%");
-			for(var p = 1;p<=m;p++){
+			
+		}else{
+			$('#grade-eject-1').addClass('grade-w-roll');
+			$("#screening2").css("top","70%")
+		}
+		for(var p = 1;p<=m;p++){
 				$(".grade-w-"+ p).css("left","100%")
 				for(var k = 1;k<=n;k++){
 					$(".grade-w-"+ p+k).css("left","100%")
 				}
 			}
-		}else{
-			$('#grade-eject-1').addClass('grade-w-roll');
-			$("#screening2").css("top","70%")
-		}
-		$('#grade-eject-2').removeClass('grade-w-roll');
+		$('#grade-eject-2').removeClass('grade-w-roll-2');
 	});
 
 $("#Regional2").click(function(){
 		if($('#grade-eject-2').hasClass('grade-w-roll-2')){
 			$('#grade-eject-2').removeClass('grade-w-roll-2');
-			for(var p = 1;p<=m;p++){
+			
+		}else{
+			$('#grade-eject-2').addClass('grade-w-roll-2');
+		}
+		for(var p = 1;p<=m;p++){
 				$(".grade-w-"+ p).css("left","100%")
 				for(var k = 1;k<=n;k++){
 					$(".grade-w-"+ p+k).css("left","100%")
 				}
 			}
-		}else{
-			$('#grade-eject-2').addClass('grade-w-roll-2');
-		}
-		$('#grade-eject-1').removeClass('grade-w-roll-2');
-		$("#Regional2").css("top","10rem")
+		$('#grade-eject-1').removeClass('grade-w-roll');
+		$("#screening2").css("top","9%")
 	});
 
 });
